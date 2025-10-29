@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import logo from './assets/img/logo.png';
+import ldg from './assets/img/ldg.png';
 
 <link rel="icon" type="image/png" href="./public/vite.png" />
 
@@ -92,7 +93,7 @@ function App() {
         </div>
       )}
 
-      {loadingSpotData && <h1>Carregando dados...</h1>}
+      {loadingSpotData && <img class="loading" src={ldg} alt="Loading..." />}
 
       {lastSpotData && (
         <div>

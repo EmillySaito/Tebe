@@ -23,6 +23,20 @@ img{
     filter: drop-shadow(0px 0px 10px #e683ff);
 }
 
+.loading{
+  width: 25px;
+  height: auto;
+  animation: girar 2s linear infinite;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg); /* Completa uma volta completa */
+  }
+}
 
 h1:nth-of-type(2),
 h1:nth-of-type(3) {
@@ -38,7 +52,7 @@ select {
   border-radius: 8px;
   background-color: white;
   color: #1e2a38;
-  margin-bottom: 25px;
+
   transition: 0.3s ease;
   
 }
@@ -54,7 +68,7 @@ div > div:last-child {
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   max-width: 600px;
-  margin: 30px auto;
+  margin:  auto;
   padding: 30px 20px;
   text-align: center;
   animation: fadeIn 0.4s ease-in;
@@ -62,7 +76,7 @@ div > div:last-child {
 
 div > div:last-child h1 {
   color: #9a00d7;
-  margin-bottom: 15px;
+  
   text-align: center;
 }
 
